@@ -72,6 +72,43 @@
     </div>
     <!-- Topbar End -->
 
+    <style>
+      /* Style for the WhatsApp icon container */
+      .whatsapp-icon {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          background-color: #25D366;
+          border-radius: 50%;
+          width: 60px;
+          height: 60px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+          cursor: pointer;
+          transition: transform 0.2s;
+      }
+
+      /* Scale effect on hover */
+      .whatsapp-icon:hover {
+          transform: scale(1.1);
+      }
+
+      /* WhatsApp icon image styling */
+      .whatsapp-icon img {
+          width: 35px;
+          height: 35px;
+      }
+  </style>
+    <div class="whatsapp-icon" onclick="openWhatsApp()">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp">
+  </div>
+  <script>
+    function openWhatsApp() {
+        window.open("https://wa.me/917320968934", "_blank");
+    }
+</script>
     <!-- Navbar Start -->
     <div class="container-fluid p-0">
       <nav
@@ -98,7 +135,7 @@
             <a href="index.html" class="nav-item nav-link">Home</a>
             <a href="about.html" class="nav-item nav-link">About</a>
             <a href="service.html" class="nav-item nav-link">Services</a>
-            <a href="#" class="nav-item nav-link">Gallery</a>
+            <a href="gallery.html" class="nav-item nav-link">Gallery</a>
             <div class="nav-item dropdown">
               <a
                 href="#"
