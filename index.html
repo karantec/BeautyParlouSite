@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <title>Staylon - Beauty Parlour</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="Staylon Beauty Parlour" name="keywords" />
-    <meta content="Staylon Beauty Parlour" name="description" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Staylon Beauty Parlour, beauty salon Bokaro, makeup services Bokaro, bridal makeup Bokaro, hair styling Bokaro, skincare treatments, Bokaro beauty spa, beauty services Bokaro" />
+    <meta name="description" content="Staylon Beauty Parlour in Bokaro offers professional beauty services including bridal makeup, hair styling, skincare treatments, and more. Experience top-quality services for your beauty needs in Bokaro." />
+    
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon" />
 
@@ -16,7 +16,8 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
@@ -78,8 +79,9 @@
       /* Style for the WhatsApp icon container */
       .whatsapp-icon {
           position: fixed;
-          bottom: 20px;
-          right: 20px;
+          bottom: 15px; /* Adjusted bottom to provide more space */
+        left: 10px;
+        justify-content: center;
           background-color: #25D366;
           border-radius: 50%;
           width: 60px;
@@ -521,53 +523,76 @@
           left: 50%;
           transform: translateX(-50%);
           width: 100px;
-          height: 3px;
+          height: 5px;
           background-color: #007bff;
       }
-      
+
       .gallery-item {
-          margin-bottom: 40px;  /* Increased spacing */
+          margin-bottom: 20px;
       }
-      
+
       .gallery-item img {
           width: 100%;
-          height: 350px;  /* Increased height */
+          height: auto;
           object-fit: cover;
-          border-radius: 12px;  /* Slightly larger radius */
-          transition: transform 0.3s ease;
-          box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+          border-radius: 8px;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       }
-      
+
       .gallery-item img:hover {
           transform: scale(1.05);
-          box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
       }
   </style>
   <div class="container py-5">
-    <h1 class="gallery-heading">Welcome to Our Gallery</h1>
-      <div class="row">
-        
-          <div class="col-lg-4 col-md-6 gallery-item">
-              <img src="insta/1.png" alt="Gallery Image 1" class="img-fluid">
-          </div>
-          <div class="col-lg-4 col-md-6 gallery-item">
-              <img src="insta/2.png" alt="Gallery Image 2" class="img-fluid">
-          </div>
-          <div class="col-lg-4 col-md-6 gallery-item">
-              <img src="insta/3.png" alt="Gallery Image 3" class="img-fluid">
-          </div>
-          
-          <!-- Second Row -->
-          <div class="col-lg-4 col-md-6 gallery-item">
-              <img src="insta/4.png" alt="Gallery Image 4" class="img-fluid">
-          </div>
-          <div class="col-lg-4 col-md-6 gallery-item">
-              <img src="insta/5.png" alt="Gallery Image 5" class="img-fluid">
-          </div>
-          <div class="col-lg-4 col-md-6 gallery-item">
-              <img src="insta/6.png" alt="Gallery Image 6" class="img-fluid">
-          </div>
-      </div>
+    <h2 class="gallery-heading">Gallery</h2>
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 gallery-item">
+            <a href="insta/1.png" data-lightbox="gallery" data-title="Gallery Image 1">
+                <img src="insta/1.png" alt="Gallery Image 1" class="img-fluid">
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 gallery-item">
+            <a href="insta/2.png" data-lightbox="gallery" data-title="Gallery Image 2">
+                <img src="insta/2.png" alt="Gallery Image 2" class="img-fluid">
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 gallery-item">
+            <a href="insta/3.png" data-lightbox="gallery" data-title="Gallery Image 3">
+                <img src="insta/3.png" alt="Gallery Image 3" class="img-fluid">
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 gallery-item">
+            <a href="insta/4.png" data-lightbox="gallery" data-title="Gallery Image 4">
+                <img src="insta/4.png" alt="Gallery Image 4" class="img-fluid">
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 gallery-item">
+            <a href="insta/5.png" data-lightbox="gallery" data-title="Gallery Image 5">
+                <img src="insta/5.png" alt="Gallery Image 5" class="img-fluid">
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 gallery-item">
+            <a href="insta/6.png" data-lightbox="gallery" data-title="Gallery Image 6">
+                <img src="insta/6.png" alt="Gallery Image 6" class="img-fluid">
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 gallery-item">
+            <a href="insta/7.png" data-lightbox="gallery" data-title="Gallery Image 7">
+                <img src="insta/7.png" alt="Gallery Image 7" class="img-fluid">
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 gallery-item">
+            <a href="insta/8.png" data-lightbox="gallery" data-title="Gallery Image 8">
+                <img src="insta/8.png" alt="Gallery Image 8" class="img-fluid">
+            </a>
+        </div>
+       
+            </a>
+        </div>
+    </div>
+</div>
       <div class="row justify-content-center mt-4 mb-5">
         <div class="col-12 d-flex justify-content-center">
             <a href="gallery.html" class="text-decoration-none">
@@ -603,12 +628,12 @@
                 <div class="col-6">
                   <div class="bg-light text-center p-4">
                     <h3 class="display-4 text-primary" data-toggle="counter-up">99</h3>
-                    <h6 class="text-uppercase">Spa Specialist</h6>
+                    <h6 class="text-uppercase">Beauty Specialist</h6>
                   </div>
                 </div>
                 <div class="col-6">
                   <div class="bg-light text-center p-4">
-                    <h3 class="display-4 text-primary" data-toggle="counter-up">999</h3>
+                    <h3 class="display-4 text-primary" data-toggle="counter-up">9999</h3>
                     <h6 class="text-uppercase">Happy Clients</h6>
                   </div>
                 </div>
@@ -992,7 +1017,8 @@
   <!-- Contact Javascript File -->
   <script src="mail/jqBootstrapValidation.min.js"></script>
   <script src="mail/contact.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
   <!-- Template Javascript -->
   <script src="js/main.js"></script>
 </body>
